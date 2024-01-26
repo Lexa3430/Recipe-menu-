@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: hsl(30, 54%, 90%);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto; 
+    margin-top: 10%;
+}
+main{
+    background-color: white;
+    width: 45%;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+img{
+    border-radius: 5%;
+    height: 45%;
+}
+p, span, h4{
+    font-size: 12px;
+    color: hsl(30, 10%, 44%);
+    display: inline;
+     padding: 4px;
+}
+ol{
+    font-size: 12px;
+    list-style-type: decimal;
+}
+li::marker{
+    font-size: 8px;
+    color: hsl(14, 45%, 36%);
+}
+h1,h2{
+font-family: 'Young Serif';
+font-weight: 400;
+}
+h1{
+    font-size: 28px;
+    padding-bottom: 8px;
+}
+
+h2{
+    font-size: 20px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 500;
+    padding: 5px 0;
+}
+h3{
+    font-size: 13px;
+    color: hsl(332, 51%, 32%);
+    font-weight: 600;
+}
+
+/*containers*/
+.header-cont{
+    padding: 20px 0;
+}
+.prep-info-box{
+    background-color: hsl(330, 100%, 98%);
+    padding: 18px;
+    border-radius: 5%;
+}
+.ingredients-cont{
+    padding: 10px;
+}
+.instructions-cont{
+    padding: 14px;
+    list-style-type: decimal;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.nutrition-cont{   
+    padding: 14px;
+}
+
+/*prep elements*/
+.prep-info-box span{
+    font-weight: 400;
+}
+.prep-info-box ul{
+    margin-left: 21px;
+}
+.prep-info-box li::marker{
+    color: hsl(332, 51%, 32%);
+}
+
+/*ingredients elements*/
+.ingredients-cont ul{
+    margin-left: 14px;
+}
+
+
+/*instructions elements*/
+.instructions-cont span, .instructions-cont li::marker{
+    font-weight: 700;
+  
+}
+.instructions-cont span, .instructions-cont p {
+  padding: 0;
+}
+.instructions-cont li{
+    margin-left: 14px;
+    padding: 6px 0 1px 10px;
+    line-height: 17px;
+}
+
+/*nutrition elements*/
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    padding: 8px;
+}
+td{
+    padding: 6px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    font-size: 12px;
+    color: hsla(30, 10%, 44%);
+}
+
+
+
+/*footer/attribution*/
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.inside{
+    width: 47%;
+}
+.outside{
+    width: 105%;
+}
+
+/*mobile design / responsiveness*/
+
+@media only screen and (max-width: 450px){
+    body{
+        margin-top: 0;
+    }
+    main{
+        width: 100%;
+        padding: 0;
+    }
+    img{
+        padding: 0;
+        border-radius: 0;
+    }
+    .prep-info-box{
+        width: 90%;
+        align-self: center;
+    }
+    .header-cont{
+        padding: 16px;
+    }
+}
